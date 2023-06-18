@@ -1,0 +1,60 @@
+{
+  "name": "eslint-plugin-deprecated-classnames",
+  "version": "1.0.0-beta.1",
+  "description": "The eslint rule checks the code for the use of deprecated class names from the defined list",
+  "author": "Artem Abramov <artem_abramov1@epam.com>",
+  "main": "dist/index.js",
+  "keywords": [
+    "eslint",
+    "eslintplugin"
+  ],
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "prebuild": "rimraf dist",
+    "build": "tsc --build tsconfig.build.json",
+    "test": "jest",
+    "format": "prettier --write src/**/*",
+    "format:check": "prettier --check src/**/*",
+    "prepare": "husky install",
+    "lint": "eslint --ext .js,.ts,.tsx src && tsc --noEmit"
+  },
+  "dependencies": {
+    "@typescript-eslint/utils": "^5.57.0",
+    "tslib": "^2.3.1",
+    "tsutils": "^3.21.0"
+  },
+  "peerDependencies": {
+    "eslint": "^6.0.0 || ^7.0.0 || ^8.0.0",
+    "typescript": "^3.7.5 || ^4.0.0 || ^5.0.0"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^17.5.1",
+    "@commitlint/config-conventional": "^17.4.4",
+    "@semantic-release/changelog": "^6.0.3",
+    "@semantic-release/commit-analyzer": "^9.0.2",
+    "@semantic-release/git": "^10.0.1",
+    "@semantic-release/npm": "^10.0.2",
+    "@semantic-release/release-notes-generator": "^10.0.3",
+    "@types/jest": "^29.5.0",
+    "@types/node": "^18.15.11",
+    "@typescript-eslint/eslint-plugin": "^5.57.0",
+    "@typescript-eslint/parser": "^5.57.0",
+    "ast-types": "^0.14.2",
+    "eslint": "^8.43.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-config-airbnb-typescript": "17.0.0",
+    "eslint-config-prettier": "8.8.0",
+    "eslint-plugin-import": "^2.27.5",
+    "eslint-plugin-prettier": "4.2.1",
+    "husky": "^8.0.3",
+    "jest": "^29.5.0",
+    "lint-staged": "^13.2.0",
+    "prettier": "^2.4.1",
+    "rimraf": "^4.4.1",
+    "semantic-release": "^21.0.0",
+    "ts-jest": "^29.0.5",
+    "typescript": "^5.0.2"
+  }
+}
