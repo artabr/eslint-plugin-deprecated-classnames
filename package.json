@@ -3,6 +3,11 @@
   "version": "1.0.0-beta.1",
   "description": "The eslint rule checks the code for the use of deprecated class names from the defined list",
   "author": "Artem Abramov <artem_abramov1@epam.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/artabr/eslint-plugin-deprecated-classnames.git"
+  },
   "main": "dist/index.js",
   "keywords": [
     "eslint",
